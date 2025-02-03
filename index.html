@@ -15,64 +15,129 @@
                 <span>Thato</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <div class="link"><a href="#services">Services</a></div>
+                <div class="link"><a href="#blogs">Blogs</a></div>
+                <div class="link contact-btn"><a href="#contact">Contact Us</a></div>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleDropdown()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Us</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="toggleDropdown()"></i>
             </div>
         </div>
     </nav>
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="main.png" alt="">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Thato</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A skilled Software Developer with a strong background in Information Technology and Computer Science.
-                        Experienced in IoT, AI, software development, networking, and troubleshooting. Good leadership, teamwork,
-                        and communication skills. Passionate about working on new projects and always looking to learn more in the
-                        tech industry.</p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                        <a href="#" ><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="Thato Moeng Portfolio Image">
+            </div>
+            <div class="content">
+                <h1>Hey, I'm <span>Thato Moeng</span></h1>
+                <div class="typewriter">I'm a <span></span></div>
+                <p>
+                    A skilled <strong>Software Developer</strong> with expertise in <strong>IoT, AI, networking, troubleshooting, and software development</strong>. 
+                    Passionate about working on new projects and always eager to learn more in the tech industry.
+                </p>
+                <div class="btn">
+                    <a href="Thato-Moeng-CV.pdf" download="Thato-Moeng-CV.pdf">
                         <button>Download CV</button>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            A skilled Software Developer with a strong background in Information Technology and Computer Science. 
+            Experienced in IoT, AI, networking, troubleshooting, and software development. 
+            Passionate about new projects and continuous learning in the tech industry.
+        </p>
+
+        <h3>Education</h3>
+        <ul>
+            <li><strong>WeThinkCode_</strong> - Level 5, Software Development (2023 - 2024)</li>
+            <li><strong>Ekurhuleni West College</strong> - Level 2-4, Information Technology & Computer Science (2017 - 2021)</li>
+            <li><strong>Universal College Outcomes</strong> - Level 3, PC End-User and Support Technician</li>
+            <li><strong>Mahuvo Secondary School</strong> - Grade 12 (2015 - 2016)</li>
+        </ul>
+
+        <h3>Work Experience</h3>
+        <p><strong>Mahuvo Secondary School</strong> - Administration Clerk & Education Assistant (2020 - 2021)</p>
+        <ul>
+            <li>Data capturing and record-keeping for students and staff.</li>
+            <li>Screening and verifying documents for accuracy and compliance.</li>
+            <li>Typing correspondence, reports, and academic materials.</li>
+            <li>Monitoring SA SAMS (South African School Administration and Management System).</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Software Development (Java, Python, Visual Basic .NET)</li>
+            <li>Networking & Troubleshooting</li>
+            <li>IoT & AI</li>
+            <li>Microsoft Office (Excel, Word, PowerPoint)</li>
+            <li>Leadership, Teamwork, Communication</li>
+            <li>Time Management, Critical Thinking</li>
+        </ul>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Software Development</li>
+            <li>IT Support & Troubleshooting</li>
+            <li>Networking & System Administration</li>
+            <li>Microsoft Office Training</li>
+        </ul>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs">
+        <h2>Blogs</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:moengt94@gmail.com">moengt94@gmail.com</a></p>
+        <p>Phone: 072 220 5741 / 072 589 3159</p>
+
+        <h3>References</h3>
+        <ul>
+            <li><strong>Machimana MM.</strong> - Manager, Marite Circuit (Phone: 076 670 1541)</li>
+            <li><strong>Manyike MR.</strong> - Principal, Mahuvo Secondary School</li>
+            <li><strong>Mhlongo SM.</strong> - Admin Clerk, Mahuvo Secondary School</li>
+        </ul>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+        
+        function toggleDropdown() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
